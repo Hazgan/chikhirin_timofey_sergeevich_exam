@@ -119,4 +119,4 @@ python -m pytest tests/test_task_7_7.py -v
 
 6. ПУБЛИЧНЫЙ РЕПОЗИТОРИЙ
 
-Публичный репозиторий GitHub/GitLab отсутствует.
+https://github.com/Hazgan/chikhirin_timofey_sergeevich_exam
