@@ -11,17 +11,7 @@ def shift(values, k):
 
 
 def main():
-    n = int(input("Введите размер массива: "))
-
-    if n <= 0:
-        print("Некорректный размер")
-        return
-
-    values = list(map(int, input("Введите элементы массива: ").split()))
-
-    if len(values) != n:
-        print("Количество элементов не соответствует размеру массива")
-        return
+    values = list(map(int, input("Введите элементы массива через пробел: ").split()))
 
     k = int(input("Введите величину сдвига: "))
 

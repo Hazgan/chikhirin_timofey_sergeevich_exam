@@ -12,7 +12,7 @@ def write_numbers(numbers, file_path=FILE_NAME):
 
 def read_numbers(file_path=FILE_NAME):
     with open(file_path, "r", encoding="utf-8") as file:
-        return [float(line.strip()) for line in file if line.strip()]
+        return [int(line.strip()) for line in file if line.strip()]
 
 
 def sum_numbers(file_path=FILE_NAME):
@@ -37,12 +37,10 @@ def main():
 
         try:
             if choice == "1":
-                count = int(input("Количество чисел: "))
                 numbers = []
-                print("Введите числа:")
+                print("Введите числа через пробел:")
 
-                for _ in range(count):
-                    numbers.append(float(input()))
+                numbers = list(map(int, input().split()))
 
                 write_numbers(numbers)
                 print("Числа записаны")
